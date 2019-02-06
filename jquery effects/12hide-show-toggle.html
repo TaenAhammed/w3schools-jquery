@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>My jQuery Learning</title>
+    </head>
+
+    <body>
+        <p>This is a paragraph.</p>
+
+        <button id="hide">hide</button>
+        <button id="show">show</button>
+        <button id="toggle">toggle</button>
+
+        <script src="../jquery selectors and events/jquery3.3.1.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                $("#hide").click(function() {
+                    $("p").hide("slow");
+                });
+                $("#show").click(function() {
+                    $("p").show(4000);
+                });
+                $("#toggle").click(function() {
+                    $("p").toggle("fast");
+                });
+            });
+        </script>
+    </body>
+</html>

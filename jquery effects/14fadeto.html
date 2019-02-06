@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>My jQuery Learning</title>
+    </head>
+
+    <body>
+        <p>This is a paragraph.</p>
+
+        <button id="fadetoggle">fadeto</button>
+
+        <div
+            class="div1"
+            style="height:80px;width:80px; background-color:red"
+        ></div>
+        <div
+            class="div2"
+            style="height:80px;width:80px; background-color:royalblue"
+        ></div>
+        <div
+            class="div3"
+            style="height:80px;width:80px; background-color:gold"
+        ></div>
+
+        <script src="../jquery selectors and events/jquery3.3.1.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                $("#fadetoggle").click(function() {
+                    $(".div1").fadeTo("fast", 0.3);
+                    $(".div2").fadeTo("slow", 0.4);
+                    $(".div3").fadeTo(3000, 0.5);
+                });
+            });
+        </script>
+    </body>
+</html>

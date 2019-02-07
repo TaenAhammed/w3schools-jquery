@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>My jquery learning</title>
+    </head>
+    <body>
+        <div id="div1">
+            <h2>Let jQuery AJAX Change This Text</h2>
+        </div>
+
+        <button>Get External Content</button>
+
+        <script src="../jquery selectors and events/jquery3.3.1.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                $("button").click(function() {
+                    $("#div1").load("test2.txt h2");
+                });
+            });
+        </script>
+    </body>
+</html>
